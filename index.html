@@ -1,60 +1,75 @@
 <!DOCTYPE html> <!-- Tipo de la versión del html en este caso html5-->
 <html lang="es">
-    <head>
-        <title>Curso de programación Web</title>
-    </head>
-    <body>
-        <header>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de programación Web</title>
+    <!-- rel->¿Qué estas trayendo? -->
+    <!-- Enlace para el favicon(icono que aparece al lado del title) -->
+    <link rel="icon" href="images/favicon/faviconE-72x72.jpg">
+    <link rel="stylesheet" type="text/css" href="Estilos/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <figure>
+                <img src="images/LogoE.jpg" alt="Logo de cabecera">
+            </figure>
             <nav>
-                <ol><!-- order list -->
+                <ol>
+                    <!-- order list -->
                     <li>
-                        <a>portafolio</a>
+                        <a href="#">Portafolio</a>
                     </li>
                     <li>
-                        <a>Experiencia</a>
+                        <a href="#">Experiencia</a>
                     </li>
                     <li>
-                        <a>Trabajemos juntos</a>
+                        <a href="#">Trabajemos juntos</a>
                     </li>
                 </ol>
             </nav>
-        </header>
-        <section>
-            <h1>
-                ¡Hola! mi nombre es <strong>Emmanuel GM</strong>
-                Desarrollo en <strong>plataformas Web</strong> 
-                <br> y estoy aprendiento cosas en Platzi
-            </h1>
-            <img src="" alt="Imagen de portada">
-        </section>
-        <section>
-            <h2>Portafolio de proyectos destacados</h2>
-            <article>
-                <h3>HCM</h3>
-                <h4>Control de rescursos humanos en ERP Solutions</h4>
-                <p><small><strong>Fecha:</strong> 27/11/2020</small></p>
-                <p><small><strong>Página:</strong> https://erpsol.com.mx/</small></p>
-                <p>ERP fue la primera empresa en donde trabajé, me desempeñe   <br>
-                    como configurador en él área de capital humano utilizando  <br>
-                    un software HCM Cloud de Oracle.
-                </p>
-            </article>
-        </section>
-        <section>
-            <h2>Más sobre mi experiencia</h2>
-            <article>
-                <figure>
-                    <img src="" alt="Imagen de mi experiencia">
-                </figure>
-                <h3>Servicio de administración y enajenación de bienes</h3>
-                <p>Mi segundo trabajo fue en el extinto Servicio de Administración y
-                    Enajenación de Bienes ahora IDEP, Instituto para devolver al
-                    Pueblo lo Robado
-                </p>
-                <a href="https://www.gob.mx/indep">Ver aquí la página del INDEP</a> 
-            </article>
-        </section>
-        <section>Sección Contactos</section>
-        <footer>footer</footer>
-    </body>
+        </div>
+    </header>
+    <section>
+        <h1>
+            ¡Hola! mi nombre es <strong>Emmanuel GM</strong>
+            Desarrollo en <strong>plataformas Web</strong>
+            <br> y estoy aprendiento cosas en Platzi
+        </h1>
+        <img id="emmanuelTajin" src="images/Emmanuel_Tajín.jpg" alt="Imagen de portada">
+    </section>
+    <section>
+        <h2>Portafolio de proyectos destacados</h2>
+        <article>
+            <h3>HCM</h3>
+            <h4>Control de rescursos humanos en ERP Solutions</h4>
+            <p><small><strong>Fecha:</strong> 27/11/2020</small></p>
+            <p><small><strong>Página:</strong> https://erpsol.com.mx/</small></p>
+            <p>ERP fue la primera empresa en donde trabajé, me desempeñe <br>
+                como configurador en él área de capital humano utilizando <br>
+                un software HCM Cloud de Oracle.
+            </p>
+            <img id="trabajoERP" src="images/TrabanjandoERP.JPG" alt="Tranbajando en ERP Soluciones">
+        </article>
+    </section>
+    <section>
+        <h2>Más sobre mi experiencia</h2>
+        <article>
+            <figure>
+                <img id="indepApuesta" src="images/indepApuesta.jpg" alt="Imagen de mi experiencia">
+            </figure>
+            <h3>Servicio de administración y enajenación de bienes</h3>
+            <p>Mi segundo trabajo fue en el extinto Servicio de Administración y
+                Enajenación de Bienes ahora IDEP, Instituto para devolver al
+                Pueblo lo Robado
+            </p>
+            <a href="https://www.gob.mx/indep">Ver aquí la página del INDEP</a>
+        </article>
+    </section>
+    <section>Sección Contactos</section>
+    <footer>footer</footer>
+</body>
+
 </html>
