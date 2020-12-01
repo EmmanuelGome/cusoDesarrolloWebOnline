@@ -1,7 +1,29 @@
+/*  reglas
+    selectores
+    declaraciones
+    propiedades
+    valores */
+
+/*Selector de etiqueta*/
 header{
     background: pink;
+    color: red;
 }
 
+/* Selectores descendentes */
+/*section article h3 {
+    color: blue;
+}
+p small{
+    color: grey;
+}*/
+
+/* Selector de clase */
+.link{
+
+}
+
+/* Selector de id */
 #emmanuelTajin{
     width: 500px;
 }
@@ -12,4 +34,7 @@ header{
 
 #trabajoERP{
     width: 500px;
+}
+#seccPortafolio{
+
 }
