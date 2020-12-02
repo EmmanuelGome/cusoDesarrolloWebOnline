@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div>
-            <figure>
+            <figure class="logo">
                 <img src="images/LogoE.jpg" alt="Logo de cabecera">
             </figure>
-            <nav>
+            <nav class="menu">
+                <!-- order list -->
                 <ol>
-                    <!-- order list -->
                     <li>
                         <a class="link" href="./portafolio/">Portafolio</a>
                     </li>
@@ -32,7 +32,7 @@
             </nav>
         </div>
     </header>
-    <section>
+    <section class="hero">
         <h1>
             ¡Hola! mi nombre es <strong>Emmanuel GM</strong>
             Desarrollo en <strong>plataformas Web</strong>
@@ -40,36 +40,38 @@
         </h1>
         <img id="emmanuelTajin" src="images/Emmanuel_Tajín.jpg" alt="Imagen de portada">
     </section>
-    <section id="seccPortafolio">
+    <section id="seccPortafolio" class="seccPortfolio">
         <h2>Portafolio de proyectos destacados</h2>
-        <article>
-            <h3>HCM</h3>
-            <h4>Control de rescursos humanos en ERP Solutions</h4>
-            <p><small><strong>Fecha:</strong> 27/11/2020</small></p>
-            <p><small><strong>Página:</strong> https://erpsol.com.mx/</small></p>
-            <p>ERP fue la primera empresa en donde trabajé, me desempeñe <br>
+        <article class="project">
+            <h3 class="project-title">HCM</h3>
+            <h4 class="project-division">Control de rescursos humanos en ERP Solutions</h4>
+            <p class="project-date"><small><strong>Fecha:</strong> 27/11/2020</small></p>
+            <p class="project-url"><small><strong>Página:</strong> https://erpsol.com.mx/</small></p>
+            <p class="porject-description">ERP fue la primera empresa en donde trabajé, me desempeñe <br>
                 como configurador en él área de capital humano utilizando <br>
                 un software HCM Cloud de Oracle.
             </p>
-            <img id="trabajoERP" src="images/TrabanjandoERP.JPG" alt="Tranbajando en ERP Soluciones">
+            <figure class="project-imageContainer">
+                <img class="project-image" id="trabajoERP" src="images/TrabanjandoERP.JPG" alt="Tranbajando en ERP Soluciones">
+            </figure>
         </article>
     </section>
     <section id="seccExp">
         <h2>Más sobre mi experiencia</h2>
-        <article>
-            <figure>
-                <img id="indepApuesta" src="images/indepApuesta.jpg" alt="Imagen de mi experiencia">
+        <article class="exp">
+            <figure class="exp-imgContainer">
+                <img class="exp-img" id="indepApuesta" src="images/indepApuesta.jpg" alt="Imagen de mi experiencia">
             </figure>
-            <h3>Servicio de administración y enajenación de bienes</h3>
-            <p>Mi segundo trabajo fue en el extinto Servicio de Administración y
+            <h3 class="institution-title">Servicio de administración y enajenación de bienes</h3>
+            <p class="institution-desc">Mi segundo trabajo fue en el extinto Servicio de Administración y
                 Enajenación de Bienes ahora IDEP, Instituto para devolver al
                 Pueblo lo Robado
             </p>
-            <a href="https://www.gob.mx/indep" target="_blanck">Ver aquí la página del INDEP</a>
+            <a class="institution-url" href="https://www.gob.mx/indep" target="_blanck">Ver aquí la página del INDEP</a>
         </article>
     </section>
     <section id="seccTrabajo">
-        <form action="/suscripcion/">
+        <form action="/suscripcion/" class="form-email">
             <h3>Envíame tu correo para trabajar juntos</h3>
             <input id="email" type="text" placeholder="Déjame tu email" value="@gmail.com">
             <input type="submit" value="enviar">
