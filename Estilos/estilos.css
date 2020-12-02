@@ -4,10 +4,32 @@
     propiedades
     valores */
 
-/*Selector de etiqueta*/
+/*Selector de etiqueta
 header{
     background: pink;
     color: red;
+}*/
+body    {
+    font-family: 'Source Sans Pro', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', Times, serif;
+    font-weight: normal;
+    /* font-style: italic; */
+    letter-spacing: -.9px; /* Espaciado entre letras */
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 2; /*Altura desde la base del texto hasta la base de la siguiente */
+    text-transform: uppercase;
+    /* text-decoration: salmon; */
 }
 
 /* Selectores descendentes */
