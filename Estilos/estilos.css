@@ -41,10 +41,16 @@ p small{
 }*/
 
 /* Selector de clase */
-.link{
-
+.project-details{
+    width: 500px;
 }
 
+.project-imageContainer{
+    width: 500px;
+}
+.hero{
+    height: 300px;
+}
 /* Selector de id */
 #emmanuelTajin{
     width: 500px;
