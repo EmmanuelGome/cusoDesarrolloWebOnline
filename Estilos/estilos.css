@@ -11,6 +11,7 @@ header{
 }*/
 body    {
     font-family: 'Source Sans Pro', serif;
+    margin: 0px;
 }
 
 h1,
@@ -65,7 +66,12 @@ p small{
     color: white;
     text-decoration: none;
 }
-
+.logo{
+    width: 100px;
+}
+.logo .imgLogo{
+    width: 100px;
+}
 .project {
             /*tamaño,estilo, color*/
     /* border-top: 10px solid red;
@@ -78,13 +84,13 @@ p small{
     border-top-style: solid;*/
     border: 1px solid grey;
     border-radius: 20px;
-    margin-bottom: 15px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 15px;
+    padding: 20px;
+    background: white;
 }
 .project-details{
     width: 500px;
-    margin: 0 auto;
+
 }
 
 .project-imageContainer{
@@ -106,5 +112,5 @@ p small{
 }
 
 #seccPortafolio{
-
+    background-color: #F0F2F5;
 }
