@@ -97,6 +97,19 @@ p small{
     width: 500px;
 }
 
+.flexbox{
+ display: flex; /* Solo afecta a hijos directos */
+ flex-direction: row/* default */;
+ flex-wrap: wrap;
+}
+.box{ /* Hijos afectados */
+    width: 200px;
+    height: 200px;
+    border: 1px solid #43B3E8;
+    flex-shrink: 0;/* Porcentaje de encogimiento*/
+    margin: 10px;
+}
+
 
 /* Selector de id */
 #emmanuelTajin{
