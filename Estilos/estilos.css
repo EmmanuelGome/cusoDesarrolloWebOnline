@@ -14,6 +14,10 @@ body    {
     margin: 0px;
 }
 
+header ol{
+    display: flex;
+}
+
 h1,
 h2,
 h3,
@@ -39,13 +43,15 @@ h1 strong{
     color: #1024da;/* Afectamos a las palabra resaltadas */
 }
 
-/* Selectores descendentes */
-/*section article h3 {
-    color: blue;
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-p small{
-    color: grey;
-}*/
+figure{
+    margin: 0;
+}
 
 /* Selector de clase */
 .hero{
@@ -60,20 +66,45 @@ p small{
 .header{
     background-color: rgb(0,0,0);/* Negro del logo*/
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
 }
 
-.header a{
-    color: white;
-    text-decoration: none;
-}
 .logo{
-    width: 100px;
+    width: 500px;
+    display: flex;
 }
 .logo .imgLogo{
     width: 100px;
 }
+.logo .myName{
+    margin: 0;
+    width: 400px;
+    align-self: center;
+}
+
+.menu{
+    height: inherit; /* .menu hereda de header */
+}
+.header ol{
+    display: flex;
+    height: inherit; /* .heder .ol hereda de .menu */
+}
+.header ol li{
+    height: inherit;/* .header ol li hereda de .header .ol */
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    height: inherit;/*.header a  que hereda de .header ol li*/
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
 .project {
-            /*tamaño,estilo, color*/
+    /*tamaño,estilo, color*/
     /* border-top: 10px solid red;
     border-right: 10px solid green;
     border-left: 10px solid orange;
@@ -98,13 +129,13 @@ p small{
 }
 
 .flexbox{
- display: flex; /* Solo afecta a hijos directos */
- flex-direction: row/* default */;
- flex-wrap: wrap;
+    display: flex; /* Solo afecta a hijos directos */
+    flex-direction: row/* default */;
+    flex-wrap: wrap;
 }
 .box{ /* Hijos afectados */
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     border: 1px solid #43B3E8;
     flex-shrink: 0;/* Porcentaje de encogimiento*/
     margin: 10px;
