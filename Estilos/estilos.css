@@ -43,6 +43,14 @@ h1 {
 h1 strong{
     color: #1024da;/* Afectamos a las palabra resaltadas */
 }
+h2 {
+    color: #1024da;
+    text-transform:uppercase;
+    font-family: 'Source Sans Pro', serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
 
 ol,
 ul{
@@ -119,31 +127,50 @@ figure{
     border-top-style: solid;*/
     border: 1px solid grey;
     border-radius: 20px;
-    margin: 15px;
+    /* margin: 15px; */
     padding: 20px;
     background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .project-details{
     width: 500px;
-
 }
-
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-division,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+.project-description{
+    font-size: 20px;
+}
+.project strong{
+    font-family: 'Roboto', Times, serif;
+}
 .project-imageContainer{
     width: 500px;
+    display: flex;
+    justify-content: center;
 }
 
-.flexbox{
-    display: flex; /* Solo afecta a hijos directos */
-    flex-direction: row/* default */;
+/* .flexbox{
+    display: flex; ->Solo afecta a hijos directos
+    flex-direction: row default ;
     flex-wrap: wrap;
 }
-.box{ /* Hijos afectados */
+.box{  ->Hijos afectados 
     width: 50px;
     height: 50px;
     border: 1px solid #43B3E8;
-    flex-shrink: 0;/* Porcentaje de encogimiento*/
+    flex-shrink: 0; -> Porcentaje de encogimiento
     margin: 10px;
-}
+} */
 
 .footer{
     background-color: #2C2F34;
@@ -165,9 +192,12 @@ figure{
 }
 
 #trabajoERP{
-    width: 500px;
+    width: 300px;
+
 }
 
 #seccPortafolio{
     background-color: #F0F2F5;
+    border: solid;
+    padding: 20px;
 }
