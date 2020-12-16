@@ -36,7 +36,8 @@ h1 {
     text-transform: uppercase;
     /* text-decoration: salmon; */
     color: white;
-    margin: 100px 520px 70px 30px;
+    margin: 0;
+    /* margin: 100px 520px 70px 30px; */
 }
 
 h1 strong{
@@ -61,6 +62,8 @@ figure{
     background-repeat: no-repeat;/* Es tan pequeña que se repite(3), solo la queremos una vez*/
     background-position-x: right;/* Ahora la movemos a la derecha*/
     background-color: #000000; /* Ahora le damos un color de fondo */
+    display: flex;
+    align-items: center;
 }
 
 .header{
@@ -68,7 +71,7 @@ figure{
     color: white;
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 70px;
 }
 
 .logo{
@@ -80,8 +83,9 @@ figure{
 }
 .logo .myName{
     margin: 0;
-    width: 400px;
+    width: 300px;
     align-self: center;
+    font-size:large;
 }
 
 .menu{
@@ -141,7 +145,16 @@ figure{
     margin: 10px;
 }
 
-
+.footer{
+    background-color: #2C2F34;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    vertical-align: middle;
+}
 /* Selector de id */
 #emmanuelTajin{
     width: 500px;
