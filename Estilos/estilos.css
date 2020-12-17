@@ -80,6 +80,11 @@ figure{
     display: flex;
     justify-content: space-between;
     height: 70px;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: fixed;
 }
 
 .logo{
@@ -87,7 +92,7 @@ figure{
     display: flex;
 }
 .logo .imgLogo{
-    width: 100px;
+    width: 91px;
 }
 .logo .myName{
     margin: 0;
@@ -171,6 +176,45 @@ figure{
     flex-shrink: 0; -> Porcentaje de encogimiento
     margin: 10px;
 } */
+.seccExp{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.seccExp h3{
+    margin: 0;
+}
+.exp{
+    border:1px solid red;
+    margin: 10px;
+    width: 480px;
+    border-radius: 15px;/*Ponemos un borde a las secciones de experiencia */
+    overflow: hidden; /*Recortamos el contenido exedente (overflow)*/
+    background-color: #f4fbff;
+}
+.exp-img{
+    width: 480px;
+    height: 200px; /*Se vé raro así que lo vamos a redimencionar en las siguiente linea*/
+    object-fit:cover;/*Redimencionamos  para mantener la relación de aspecto*/
+}
+.exp-detail{
+    margin: 20px 40px;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+    top: -50px; /*Alineamos la caja hacia arriba poniendo top negativo*/
+    text-align: center;/* Alineamos el texto al centro */
+}
+.institution-desc{
+    text-align: justify;
+}
+.institution-url{
+    color: #056fff;
+    border: 1px solid /* El color del borde es igual al del texto */;
+    padding: 5px 15px;
+    text-decoration: none;/* Le quitamos el estilo de URL*/
+    border-radius: 5px;
+}
 
 .footer{
     background-color: #2C2F34;
@@ -182,12 +226,13 @@ figure{
 .footer img{
     vertical-align: middle;
 }
-/* Selector de id */
-#emmanuelTajin{
-    width: 500px;
-}
 
-#indepApuesta{
+
+/* Selector de id */
+#about-experience{
+    margin: 15px 0px 15px 20px;
+}
+#emmanuelTajin{
     width: 500px;
 }
 
