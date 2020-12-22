@@ -85,6 +85,7 @@ figure{
     left: 0;
     right: 0;
     position: fixed;
+    z-index: 0;
 }
 
 .logo{
@@ -204,6 +205,7 @@ figure{
     position: relative;
     top: -50px; /*Alineamos la caja hacia arriba poniendo top negativo*/
     text-align: center;/* Alineamos el texto al centro */
+    z-index: 10;
 }
 .institution-desc{
     text-align: justify;
@@ -214,6 +216,61 @@ figure{
     padding: 5px 15px;
     text-decoration: none;/* Le quitamos el estilo de URL*/
     border-radius: 5px;
+}
+
+.seccContact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-email #email{
+    border-color: gray;
+    border-style: solid;
+    padding: 4px 20px 4px 40px;
+    background-image: url("../images/icons/email-icon.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+.form-email h3{
+    font-family: 'Source Sans Pro', Courier, monospace;
+    font-weight: bold;
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.social-link.twitter{
+    background-image: url("../images/icons/Twitter_Social_Icon_Rounded_Square_White.svg");
+    background-size: 50px;
+}
+.social-link.facebook{
+    background-image: url("../images/icons/facebook-icon.svg");
+    background-size: 50px;
+}
+.social-link.instagram{
+    background-image: url("../images/icons/instagram-icon.svg");
+    background-size: 50px;
+}
+.social-link.github{
+    background-image: url("../images/icons/github-icon.svg");
+    background-size: 50px;
 }
 
 .footer{
