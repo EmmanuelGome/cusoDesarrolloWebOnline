@@ -65,13 +65,17 @@ figure{
 /* Selector de clase */
 .hero{
     height: 300px;
-    background-image: url('../images/heroCaida.jpg'); /* Imagen de fondo con ruta relativa */
-    background-size: 500px 300px;/* Medidas al fondo estáticas,la imagen estaba muy grande*/
-    background-repeat: no-repeat;/* Es tan pequeña que se repite(3), solo la queremos una vez*/
-    background-position-x: right;/* Ahora la movemos a la derecha*/
-    background-color: #000000; /* Ahora le damos un color de fondo */
+    /* background-image: url('../images/heroCaida.jpg'); Imagen de fondo con ruta relativa
+    background-size: 500px 300px    Medidas al fondo estáticas,la imagen estaba muy grande
+    background-repeat: no-repeat    Es tan pequeña que se repite(3), solo la queremos una vez
+    background-position-x: right    Ahora la movemos a la derecha*/
+    background-color: #000000; /*Ahora le damos un color de fondo*/
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.hero-caida{
+    object-fit: cover;
 }
 
 .header{
@@ -84,8 +88,6 @@ figure{
     width: 100%;
     left: 0;
     right: 0;
-    position: fixed;
-    z-index: 0;
 }
 
 .logo{
@@ -133,7 +135,7 @@ figure{
     border-top-style: solid;*/
     border: 1px solid grey;
     border-radius: 20px;
-    /* margin: 15px; */
+    margin: 10px 0px;
     padding: 20px;
     background: white;
     display: flex;
@@ -186,9 +188,8 @@ figure{
     margin: 0;
 }
 .exp{
-    border:1px solid red;
     margin: 10px;
-    width: 480px;
+    width: 478px;
     border-radius: 15px;/*Ponemos un borde a las secciones de experiencia */
     overflow: hidden; /*Recortamos el contenido exedente (overflow)*/
     background-color: #f4fbff;
@@ -283,7 +284,17 @@ figure{
 .footer img{
     vertical-align: middle;
 }
-
+/* Wraper o Containers */
+.container{
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
 
 /* Selector de id */
 #about-experience{
@@ -300,6 +311,5 @@ figure{
 
 #seccPortafolio{
     background-color: #F0F2F5;
-    border: solid;
     padding: 20px;
 }
